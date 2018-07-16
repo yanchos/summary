@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Conferences</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <label class="lbl">Область:
+            <select id="sphere">
+                <option value="">не выбрано</option>
+                <option value="техническая">техническая</option>
+                <option value="гуманитарная">гуманитарная</option>
+            </select>
+        </label>
+
+        <label class="lbl">Стоимость участия:
+            <select id="cost">
+                <option value="">не выбрано</option>
+                <option value="бесплатно">бесплатно</option>
+                <option value="взнос">взнос</option>
+            </select>
+        </label>
+
+        <label class="lbl">Категория участников:
+            <select id="category">
+                <option value="">не выбрано</option>
+                <option value="студенты">студенты</option>
+                <option value="аспиранты">аспиранты</option>
+            </select>
+        </label>
+
+        <input id="btn" type="submit" name="submit" value="Фильтровать">
+    </div>
+
+    <div id="tbl"></div>
+
+    <script src="js/conferencesModel.js"></script>
+    <script src="js/conferencesView.js"></script>
+    <script src="js/conferencesController.js"></script>
+</body>
+</html>
