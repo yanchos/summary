@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Audio Api</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body onload="onLoad()">
+    <div class="container">
+        <input type="file" id="file-input" accept="audio/*">
+    </div>
+    <div class="container">
+        <table>
+            <thead>
+            <tr>
+                <th> Трек </th>
+                <th> </th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Текущий трек:</h2>
+        <h2 id="current_track">Не выбрано</h2>
+    </div>
+    <div class="container">
+        <input type="range" id="timeline" min="0" max="100" value="0" step="0.01" onchange="changeTimelime(this)">
+    </div>
+    <div class="container">
+        <button id="previous_track"><img class="btn" src="assets/img/previous-track-button.png" alt="Previous track" onclick="previousTrack()"></button>
+        <button id="backward_30s"><img class="btn" src="assets/img/30s-backward-button.png" alt="30s backward" onclick="backward30s()"></button>
+        <button id="backward_10s"><img class="btn" src="assets/img/10s-backward-button.png" alt="10s backward" onclick="backward10s()"></button>
+        <button id="play"><img class="btn" src="assets/img/play-button.png" alt="Play" onclick="play()"></button>
+        <button id="pause"><img class="btn" src="assets/img/pause-button.png" alt="Pause" onclick="pause()"></button>
+        <button id="forward_10s"><img class="btn" src="assets/img/10s-forward-button.png" alt="10s forward" onclick="forward10s()"></button>
+        <button id="forward_30s"><img class="btn" src="assets/img/30s-forward-button.png" alt="30s forward" onclick="forward30s()"></button>
+        <button id="next_track"><img class="btn" src="assets/img/next-track-button.png" alt="Next track" onclick="nextTrack()"></button>
+        <img class="btn" src="assets/img/high-volume-button.png" alt="Volume">
+        <input id="volume" type="range" list="tickmarks" min="0" max="100" value="100" onchange="changeVolume(this)">
+        <datalist id="tickmarks">
+            <option value="0">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100">
+        </datalist>
+    </div>
+    <div class="container">
+        <button id="first_filter"><img class="btn" src="assets/img/filter1-button.png" onclick="filter1st()"></button>
+        <button id="second_filter"><img class="btn" src="assets/img/filter2-button.png" onclick="filter2nd()"></button>
+        <button id="third_filter"><img class="btn" src="assets/img/filter3-button.png" onclick="filter3rd()"></button>
+        <button id="no_filter"><img class="btn" src="assets/img/no-filter-button.png" onclick="filterDisconnect()"></button>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

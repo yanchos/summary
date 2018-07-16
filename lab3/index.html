@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <label class="lbl">Статус задания:
+            <select id="status" onchange="loadInfo()">
+                <option value="all">Все</option>
+                <option value="true">Выполнено</option>
+                <option value="false">Не выполнено</option>
+            </select>
+        </label>
+    </div>
+    <div id="tbl"></div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

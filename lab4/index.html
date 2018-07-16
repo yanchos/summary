@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock Canvas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class = "container">
+        <canvas id="canvas">Невозможно отобразить Canvas</canvas>
+    </div>
+    <div class="container">
+        <label class="lbl">Часы:
+            <input id="hour_output" type="number" min="0" max="24"disabled>
+        </label>
+        <label class="lbl">Минуты:
+            <input id="minute_output" type="number" min="0" max="24" disabled>
+        </label>
+        <label class="lbl">Секунды:
+            <input id="second_output" type="number" min="0" max="24" disabled>
+        </label>
+    </div>
+    <div class="container">
+        <label class="lbl">Часы:
+            <input id="hour_input" type="number" value="0" min="0" max="24">
+        </label>
+        <label class="lbl">Минуты:
+            <input id="minute_input" type="number" value="0" min="0" max="60">
+        </label>
+        <label class="lbl">Секунды:
+            <input id="second_input" type="number" value="0" min="0" max="60">
+        </label>
+    </div>
+    <div class="container" style="max-width: 250px;">
+        <input id="btn_change" type="submit" onclick="inputTime()" value="Изменить">
+        <input id="btn_system" type="submit" onclick="useSystem()" value="Системное время">
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

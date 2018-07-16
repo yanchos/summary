@@ -1,0 +1,77 @@
+.contrast-text{
+    color: #567727;
+}
+
+.btn-select-city{
+    background-color: #77776E;
+}
+
+._header_wrapper {
+    margin: 15px auto;
+}
+._btn_icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+._navbar_block {
+    padding: 0;
+    margin: 15px auto;
+}
+
+._search_row_wrapper {
+    margin: 30px auto;
+}
+
+._search_col_wrapper {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+._search_img_wrapper{
+    height: 160px;
+    line-height: 160px;
+    padding: 0 60px;
+    text-align: center;
+}
+
+.card .btn, .card h3{
+    display: inline;
+}
+
+.card img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.card-title {
+    margin: 0;
+}
+
+._search_card_bnt{
+    float: right;
+    margin: 0;
+    border: none;
+}
+
+._search_card_footer{
+    padding-bottom: 0;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+p,.breadcrumb .active, .navbar-light .navbar-nav .nav-link, a:not([href]):not([tabindex]){
+    color: #6D6D6C;
+
+}
+
+button, .btn-success{
+    background-color: #32804D;
+}
+
+.btn-outline-success{
+    color: #32804D;
+}

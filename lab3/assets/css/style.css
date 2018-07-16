@@ -1,0 +1,39 @@
+#rtbl {
+    table-layout: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px auto 0;
+}
+
+#rtbl th {
+    text-align: center;
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#rtbl td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#rtbl caption {
+    font-weight: bold;
+    font-size: large;
+    caption-side: top;
+}
+
+.lbl {
+    font-family: "Times New Roman", serif;
+    font-size: medium;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+

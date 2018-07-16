@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабиринт.ру</title>
+    <link href="assets/css/bootstrap.sandstone.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class = "row" id = "top">
+            <div class = "col-1"></div>
+            <div class = "col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Как заказать</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Вопрос-ответ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Сертификаты</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Система скидок</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Помощь</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-3">
+                        <div class="row _header_wrapper">
+                            <a href="#">
+                                <img src="assets/img/logo.png" alt = "Книжный интернет-магазин Лабиринт" style = "width: 100%;"/>
+                            </a>
+                        </div>
+                        <div class="row _header_wrapper">
+                            <label id = "city_select_result" aria-live="polite" hidden></label>
+                            <div class="btn-group btn-block" role="group">
+                                <button id="btn_city_select" aria-controls="city_select_result" type="button" class="btn btn-secondary btn-block dropdown-toggle btn-select-city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберите город</button>
+                                <div id="city_select" class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 43px, 0px); top: 0; left: 0; will-change: transform;">
+                                    <a class="dropdown-item">Москва</a>
+                                    <a class="dropdown-item">Санкт-Петербург</a>
+                                    <a class="dropdown-item">Екатеринбург</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class = "col-4">
+                        <div class="row _header_wrapper" style = "margin-top: 50px">
+                            <h3>+7 495 745-95-25</h3>
+                            <p class="lead"> Интернет-магазин <br/> круглосуточно </p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class = "col-3">
+                        <div class="row _header_wrapper">
+                            <button type="button" class="btn btn-link contrast-text"> <img class="_btn_icon" src="assets/img/user.png"/>Личный кабинет</button>
+                            <button type="button" class="btn btn-link contrast-text"> <img class="_btn_icon" src="assets/img/basket.png"/>Корзина</button>
+                            <button type="button" class="btn btn-success btn-block">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-1"></div>
+        </div>
+        <div class = "row">
+            <div class = "col-12 _navbar_block">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ВСЕ КНИГИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ШКОЛА</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ИГРУШКИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">КАНЦТОВАРЫ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ЕЩЕ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">КЛУБ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class = "row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="contrast-text">Мультимедиа</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="contrast-text">Аудио</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="contrast-text">Аудиокниги</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="contrast-text">Отечественная художественная литература</a></li>
+                            <li class="breadcrumb-item active">Классическая отечественная литература</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-12">
+                        <h2>Отечественная классическая литература на CD и MP3</h2>
+                    </div>
+                </div>
+                <div class = "row" role="search" aria-controls="search_result">
+                    <div class="col-9">
+                        <label id="label_search" for="input_search" hidden>Поиск</label>
+                        <input id ="input_search" type="text" class="form-control" placeholder="Поиск в Лабиринте" aria-labelledby="label_search">
+                    </div>
+                    <div class="col-3">
+                        <button id = "btn_search" type="submit" class="btn btn-outline-primary">Искать</button>
+                    </div>
+                </div>
+
+                <div class="row _search_row_wrapper" aria-live="polite" id="search_result">
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Рассказы Средство от запоя (CD)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/1.jpg" alt="Изображение товара">
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Антон Павлович Чехов</h6>
+                                <h6 class="card-text">Зебра-Е: Медицина и здоровье</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>98 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Обломов (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/2.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Гончаров Иван Александрович</h6>
+                                <h6 class="card-text">1С: Аудиокниги</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>160 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Казаки (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/3.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Толстой Лев Николаевич</h6>
+                                <h6 class="card-text">1С: Аудиокниги</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>131 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Лолита (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/4.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Набоков Владимир Владимирович</h6>
+                                <h6 class="card-text">Ардис: Русская проза</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>269 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Двенадцать стульев (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/5.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Ильф Илья Арнольдович</h6>
+                                <h6 class="card-text">Ардис: Юмор и сатира</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>200 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Слепой музыкант (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/6.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Короленко Владимир Галактионович</h6>
+                                <h6 class="card-text">Ардис: Русская проза</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>153 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Записки на манжетах (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/7.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Булгаков Михаил Афанасьевич</h6>
+                                <h6 class="card-text">Вира-М: Русская литература ХХ века</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>145 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 _search_col_wrapper">
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">На дне. Аудиоспектакль МХАТ СССР (CDmp3)</h5>
+                            </div>
+                            <div class="_search_img_wrapper">
+                                <img src="assets/img/books/8.jpg" alt="Изображение товара"/>
+                            </div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-text">Горький Максим</h6>
+                                <h6 class="card-text">1С: Аудиокниги</h6>
+                            </div>
+                            <div class="card-body text-primary _search_card_footer">
+                                <h3>121 р.</h3>
+                                <button class="btn btn-outline-success _search_card_bnt">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <p class="float-right"><a href="#top" class="contrast-text">К началу страницы</a></p>
+                <p>© Холдинг «Лабиринт»</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
